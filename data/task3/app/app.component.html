@@ -1,0 +1,10 @@
+<form [formGroup]="mapForm" name ="mapForm" (ngSubmit)="onSubmit()" id="mapForm" method="POST"> 
+<div style="text-align:center">
+</div>
+
+</form>
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="14">
+    <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="markerOpts"></agm-marker>
+</agm-map>
+<router-outlet></router-outlet>
+
